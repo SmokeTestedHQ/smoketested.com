@@ -68,11 +68,10 @@ jobs:
           path: './public' # This is the path where the artifact will be downloaded to
 
       - name: Deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ vars.ftp_server }}
           username: ${{ vars.ftp_username }}
           password: ${{ secrets.ftp_password }}
           port: ${{ vars.ftp_port }}
-          local_path: './public/*' # This is the path where the artifact is located
-          remote_path: '/public_html'
+          local-dir: './public/*'
