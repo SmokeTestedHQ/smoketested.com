@@ -5,7 +5,7 @@ description: "As soon as Winston had dealt with each of the messages, he clipped
 image: images/cctv2.jpeg
 imageAltAttribute: CCTV Camera
 tags:
-   - loyalty
+   - Esp32
    - liberty 
    - surveillance
 ---
