@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Flight Recorder",
+    "description": "Prototype to log flight data.",
+    "image": "images/flight.jpg",
+    "url": "https://github.com/example/flight-recorder",
+    "category": "Aerospace"
+  },
+  {
+    "title": "TCP Dashboard",
+    "description": "UI for embedded TCP interface.",
+    "image": "images/dashboard.jpg",
+    "url": "https://github.com/example/tcp-dashboard",
+    "category": "Networking"
+  },
+  {
+    "title": "ESP32 Flight Control",
+    "description": "Low-level control firmware for ESP32.",
+    "image": "images/esp32.jpg",
+    "url": "https://github.com/example/esp32-flight",
+    "category": "Aerospace"
+  }
+]

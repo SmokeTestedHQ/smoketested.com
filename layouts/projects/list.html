@@ -1,16 +1,20 @@
 {{ define "main" }}
-  <section class="projects-list">
-    <h1>{{ .Title }}</h1>
-    <div class="projects-container">
-      {{ range site.Data.projects }}
-        <article class="project-card">
-          <a href="{{ .url }}">
-            <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" />
-            <h2>{{ .title }}</h2>
-          </a>
-          <p>{{ .description }}</p>
-        </article>
-      {{ end }}
-    </div>
-  </section>
+<div class="intro">
+  <h1>{{ .Title }}</h1>
+  {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+</div>
+
+<div class="projects">
+  {{ range site.Data.projects }}
+  <div class="card">
+    <a href="{{ .url }}" target="_blank">
+      <img src="{{ .image }}" alt="{{ .title }}" class="card-img">
+      <div class="card-content">
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+      </div>
+    </a>
+  </div>
+  {{ end }}
+</div>
 {{ end }}
